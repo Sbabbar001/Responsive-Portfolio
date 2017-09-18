@@ -1,0 +1,712 @@
+
+
+		/*  NAVAGATION BAR  */
+
+.topnav {
+	background-color: white;					
+	border-color: #BEBEBE;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+#name {
+	padding:  30px;
+	color: white;
+	background-color: #009999;
+	width: 200px;
+	font-size: 35px;
+	margin-left: 15%;
+}
+
+nav {
+	float: right;
+	margin-top: -60px;
+	margin-right: 15%; 
+	text-align: center;
+/*	margin-bottom: 25%; */	
+/*  bottom: 20%; */
+/* NOTE bottom margin will not work in this case ... not sure why?
+*/
+}
+
+a {
+	text-decoration: none;
+	color: #BEBEBE;
+	font-size: 25px;
+}
+
+		/*  NAVAGATION BAR END  */
+
+		
+		/*  BACKGROUND   */
+html, body {
+  height: 100%;
+}
+body {
+	display: flex;
+    flex-direction: column;
+	background-image: url(http://designwoop.com/uploads/2012/10/subtle_background_textures_14.jpg);
+	margin: 0;
+	padding: 0;
+}
+
+		/*  BACKGROUND END  */
+.mainContent {
+	flex: 1 0 auto;
+}
+
+		/*  ABOUT ME CONTENT  */
+
+.aboutMeSection {
+	float: left; 
+	background-color: white;										
+	border: 1px solid #BEBEBE;
+	width: 650px;
+	margin-left: 15%;
+	margin-top: 2%;
+}
+
+.sectionContainer {
+	background-color: white;										
+	border-bottom: 1px solid #BEBEBE;
+	width: 85%;
+	margin: 0 auto 0 auto;
+}
+
+#imgText {
+	float: left;
+	margin-right: 15px;
+	width: 35%;	
+}
+
+#profilePhoto {
+	width: 100%;
+}
+
+p {
+	margin-right: 5%;
+	color: #BEBEBE;
+	font-size: 20px;
+}
+
+.Wrapper {
+	margin: 20px 50px;
+}
+
+
+
+
+h2 {
+	color: #009999;
+	font-size: 30px;
+}
+
+
+		/*  END ABOUT ME CONTENT  */
+
+
+		/* 	CONTACT ME CONTENT  */
+#contact-me {
+	margin-top: 2%;
+	width: 270px;
+	float: right;
+	background: white;
+	border: 1px solid #BEBEBE;
+	margin-right: 15%;
+}
+
+#contact-me img {
+	width: 42px;
+	height: 42px;
+	border: 0;
+	margin: 0 6px; 
+}
+
+#contact-me h2 {
+	font-size: 28px;
+}
+
+		/* 	CONTACT ME CONTENT  */
+
+
+		/* PORTFOLIO CONTENT  */
+.portpics {
+    float: left;
+    margin-bottom: 20px;
+    width: 47%;
+    position: relative;
+}
+
+
+.portpics p {
+    background-color: teal;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+}
+
+
+
+#imageholder {
+    margin-left: 35px;
+}
+/*every odd element inside the class portpics inside the id imageholder should have a margin to the right of 10px*/
+#imageholder .portpics:nth-child(odd) {
+    margin-right: 10px;
+}
+
+#imageholder .portpics:nth-child(even) {
+    margin-left: 10px;
+}
+
+.portimage {
+    width: 100%;
+}
+
+		/* END PORTFOLIO CONTENT */
+		
+		/* CONTACT FORM */
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+}
+
+input[type=submit] {
+	background-color: #009999;
+}
+
+
+		/* END CONTACT FORM */
+		
+		/*  FOOTER  */
+
+footer {
+	clear:both;
+	background-color: #888888;
+	text-align: center;
+	color: #BEBEBE;
+	padding: 20px;
+	border-top: 4px solid #009999;
+	margin-top: 2%;
+/*	margin:  0 auto 0 auto;
+	/*display: block;*/
+}
+		/*  END FOOTER  */
+
+
+
+		/*  MEDIA QUERIES 1 980px */
+
+@media screen and (max-width: 980px) {
+		
+  /*  NAVAGATION BAR  */
+
+
+.topnav {
+	background-color: white;					
+	border-color: #BEBEBE;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+#name {
+	padding:  30px;
+	color: white;
+	background-color: #009999;
+	width: 200px;
+	font-size: 35px;
+	margin-left: 4%;
+}
+
+nav {
+	float: right;
+	margin-top: -60px;
+	margin-right: 7%; 
+	text-align: center;
+}
+			/*  ABOUT ME CONTENT  */
+
+	.aboutMeSection {
+		float: none; 
+		width: 89%;
+		margin-left: 4%;
+		margin-right: 4%;
+		margin-top: 4%;
+		margin-bottom: 0;
+
+	}
+
+
+	.sectionContainer {
+		background-color: white;										
+		border-bottom: 1px solid #BEBEBE;
+		width: 90%;
+/*		margin: 4%;
+*/		margin-left: 4%;
+/*		margin-right: 4%;
+*/	}
+
+	#imgText {
+		float: none;
+		margin-right: 2%;
+		margin-left: 2%;
+		width: 95%;
+	}
+
+	#profilePhoto {
+		width: 100%;
+	}
+
+	p {
+		margin: 0;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	.Wrapper {
+		margin: 4%;
+	}
+
+
+	h2 {
+		font-size: 15px;
+	}
+
+	#profilePhoto {
+		text-align: center;
+	}
+		/* 	CONTACT ME CONTENT  */
+	#contact-me {
+		margin-top: 2%;
+		width: 89%;
+		float: none;
+		margin-right: 15%;
+		margin-bottom: 0;
+	}
+
+	#contact-me img {
+		width: 32px;
+		height: 32px;
+		border: 0;
+		margin: 0 6px; 
+	}
+
+	#contact-me h2 {
+		font-size: 15px;
+	}
+
+	footer {
+	padding: 18px;
+	border-top: 4px solid #009999;
+	margin-top: 2%;
+	}
+
+	/* PORTFOLIO CONTENT  */
+.portpics {
+    float: none;
+    margin-bottom: 20px;
+    width: 40%;
+    position: relative;
+/*    THIS NEEDS HELP TO POSITION CORRECT
+*/}
+
+
+.portpics p {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+}
+
+
+
+#imageholder {
+    margin-left: 0;
+}
+/*every odd element inside the class portpics inside the id imageholder should have a margin to the right of 10px*/
+#imageholder .portpics:nth-child(odd) {
+    margin-right: 0;
+}
+
+#imageholder .portpics:nth-child(even) {
+    margin-left: 0;
+}
+
+.portimage {
+    width: 100%;
+}
+  }
+
+		
+}
+		/*  END MEDIA QUERIES 1 980px */
+
+		/*  MEDIA QUERIES 2 768px */
+
+@media screen and (max-width: 768px) {
+  
+  /*  NAVAGATION BAR  */
+
+
+.topnav {
+	background-color: white;					
+	border-color: #BEBEBE;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+#name {
+	padding:  30px;
+	color: white;
+	background-color: #009999;
+	width: 200px;
+	font-size: 35px;
+	margin-left: 4%;
+}
+
+nav {
+	float: right;
+	margin-top: -60px;
+	margin-right: 7%; 
+	text-align: center;
+}
+			/*  ABOUT ME CONTENT  */
+
+	.aboutMeSection {
+		float: none; 
+		width: 89%;
+		margin-left: 4%;
+		margin-right: 4%;
+		margin-top: 4%;
+		margin-bottom: 0;
+
+	}
+
+
+	.sectionContainer {
+		background-color: white;										
+		border-bottom: 1px solid #BEBEBE;
+		width: 90%;
+/*		margin: 4%;
+*/		margin-left: 4%;
+/*		margin-right: 4%;
+*/	}
+
+	#imgText {
+		float: none;
+		margin-right: 2%;
+		margin-left: 2%;
+		width: 95%;
+	}
+
+	#profilePhoto {
+		width: 100%;
+	}
+
+	p {
+		margin: 0;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	.Wrapper {
+		margin: 4%;
+	}
+
+
+	h2 {
+		font-size: 15px;
+	}
+
+	#profilePhoto {
+		text-align: center;
+	}
+		/* 	CONTACT ME CONTENT  */
+	#contact-me {
+		margin-top: 2%;
+		width: 89%;
+		float: none;
+		margin-right: 15%;
+		margin-bottom: 0;
+	}
+
+	#contact-me img {
+		width: 32px;
+		height: 32px;
+		border: 0;
+		margin: 0 6px; 
+	}
+
+	#contact-me h2 {
+		font-size: 15px;
+	}
+
+	footer {
+	padding: 18px;
+	border-top: 4px solid #009999;
+	margin-top: 2%;
+	}
+
+	/* PORTFOLIO CONTENT  */
+.portpics {
+    float: none;
+    margin-bottom: 20px;
+    width: 40%;
+    position: relative;
+/*    THIS NEEDS HELP TO POSITION CORRECT
+*/}
+
+
+.portpics p {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+}
+
+
+
+#imageholder {
+    margin-left: 0;
+}
+/*every odd element inside the class portpics inside the id imageholder should have a margin to the right of 10px*/
+#imageholder .portpics:nth-child(odd) {
+    margin-right: 0;
+}
+
+#imageholder .portpics:nth-child(even) {
+    margin-left: 0;
+}
+
+.portimage {
+    width: 100%;
+}
+  }
+		/*  END MEDIA QUERIES 2 768px */
+
+		/*  MEDIA QUERIES 3 640px */
+@media screen and (max-width: 640px) {
+
+	/*  NAVAGATION BAR  */
+
+	#name {
+		padding: 2%;
+		width: 100%;
+		font-size: 20px;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	nav {
+		padding: 1%;
+		width: 100%;
+		float: none;
+		margin-top: 0;
+		margin-right: 0; 
+		text-align: center;
+	}
+
+	a {
+		font-size: 12px;
+  }
+
+	.mainContent {
+		width: 90%;
+	}
+
+			/*  ABOUT ME CONTENT  */
+
+	.aboutMeSection {
+		float: none; 
+		width: 100%;
+		margin-left: 4%;
+		margin-right: 4%;
+		margin-top: 4%;
+		margin-bottom: 0;
+
+	}
+
+
+	.sectionContainer {
+		background-color: white;										
+		border-bottom: 1px solid #BEBEBE;
+		width: 90%;
+/*		margin: 4%;
+*/		margin-left: 4%;
+/*		margin-right: 4%;
+*/	}
+
+	#imgText {
+		float: none;
+		margin-right: 2%;
+		margin-left: 2%;
+		width: 95%;
+	}
+
+	#profilePhoto {
+		width: 100%;
+	}
+
+	p {
+		margin: 0;
+		font-size: 10px;
+		text-align: center;
+	}
+
+	.Wrapper {
+		margin: 4%;
+	}
+
+
+	h2 {
+		font-size: 15px;
+	}
+
+	#profilePhoto {
+		text-align: center;
+	}
+		/* 	CONTACT ME CONTENT  */
+	#contact-me {
+		margin-top: 2%;
+		width: 100%;
+		float: none;
+		margin-right: 15%;
+	}
+
+	#contact-me img {
+		width: 32px;
+		height: 32px;
+		border: 0;
+		margin: 0 6px; 
+	}
+
+	#contact-me h2 {
+		font-size: 15px;
+	}
+
+	footer {
+	padding: 18px;
+	border-top: 4px solid #009999;
+	margin-top: 2%;
+	}
+
+	/* PORTFOLIO CONTENT  */
+.portpics {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+
+
+.portpics p {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+}
+
+
+
+#imageholder {
+    margin-left: 0;
+}
+/*every odd element inside the class portpics inside the id imageholder should have a margin to the right of 10px*/
+#imageholder .portpics:nth-child(odd) {
+    margin-right: 0;
+}
+
+#imageholder .portpics:nth-child(even) {
+    margin-left: 0;
+}
+
+.portimage {
+    width: 100%;
+}
+
+		/* END PORTFOLIO CONTENT */
+
+}
+
+
+
+	/*  END MEDIA QUERIES 3 640px */
+
+
+
+
+
+/*	.mainContent {
+			width: 100%;
+			float: none;
+		}
+	#name {
+		width: 100%;
+		box-sizing: border-box;
+		text-align: center;
+		position: static;*/
+
+
+
+
+
+
+		/*  NOTES  */
+
+/*#profilePhoto {
+	height: 35%;
+	width: 35%;
+}*/
+/*#aboutMe {
+
+}*/
+
+/*.content {
+	max-width: 960px;
+	margin: 0 auto;
+}*/
+
+/*.about_me {
+	width: 600px;
+	margin:  0 auto 0 auto;
+	padding: 20px;
+	border-width: 30px;
+	border-color: grey;
+	float: left;
+
+}*/
+/*.container {
+	width: 600px;
+	margin:  0 auto 0 auto;
+	padding: 20px;
+}*/
+
+
+/*.wrapper {
+	width: 1200px;
+	margin:  0 auto 0 auto;
+	padding: 20px;
+
+}*/
+
+/*.container {
+	padding: 90px;
+	color: white;
+	background-color: #009999;
+	width: 40px;
+	height: 5px;
+}*/
+
+
+/*							width: 600px;
+*//*							margin:  0 auto 0 auto;
+*//*							padding: auto;
+*/
+
